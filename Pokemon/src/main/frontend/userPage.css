@@ -1,0 +1,33 @@
+body {
+  color: #fff;
+  background: #63738a;
+  font-family: "Roboto", sans-serif;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: addLogOut;
+}
+.item3 {
+  grid-area: search;
+}
+.item4 {
+  grid-area: pokemon;
+  top: 2in;
+  left: 25%;
+  right: 25%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "addLogOut null null search"
+    "pokemon pokemon pokemon pokemon"
+    "pokemon pokemon pokemon pokemon";
+  grid-gap: 10px;
+  padding: 10px;
+  text-align: center;
+}

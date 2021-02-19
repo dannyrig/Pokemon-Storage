@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Your Pokemon</title>
+    <link rel="stylesheet" href="userPage.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <h1 style="text-align: center;">Welcome!</h1>
+        </div>
+        <div class="item2">
+            <input type="button" class="btn btn-primary" value="Add Pokemon" id="add">
+            <br></br>
+            <input type="button" class="btn btn-primary" value="Log Out"  onclick="location.href='signin.html';">
+        </div>
+        <div class="item3">
+            <input type="search" id="find">
+            <input type="button" class="btn btn-primary" id="filter" value="Search">
+        </div>
+        <div class="item4" id="pokeDisplay">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Level</th>
+                <th>Ability</th>
+                <th>Type</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id = "body">
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="userPage.js"></script>
+</body>
+
+</html>

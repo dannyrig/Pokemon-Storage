@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add a New Pokemon</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    </head>
+    <body>
+        <h2>Add a New Pokemon</h2>
+        <br>
+        <div class="pokemon_form" name="userID" id="poke_form">
+                <label for="Name">Name:</label>
+                <select class="searchable" id="name"></select><br/><br/>
+                <label>Ability:</label>
+                <select class="searchable" id="Ability"></select><br/><br/>
+                <label>Level:</label>
+                <input type="number" id="Level" value=""><br/><br/>
+                <label>HP:</label>
+                <input type="number" id="HP" value=""><br/><br/>
+                <label>Attack:</label>
+                <input type="number" id="Attack" value=""><br/><br/>
+                <label>Defense:</label>
+                <input type="number" id="Defense" value=""><br/><br/>
+                <label>Special Attack:</label>
+                <input type="number" id="Special_Attack" value=""><br/><br/>
+                <label>Special Defense:</label>
+                <input type="number" id="Special_Defense" value=""><br/><br/>
+                <label>Speed:</label>
+                <input type="number" id="Speed" value=""><br/><br/>
+                <label>Move 1:</label>
+                <select class="searchable" id="Move1"></select><br/><br/>
+                <label>Move 2:</label>
+                <select class="searchable" id="Move2"></select><br/><br/>
+                <label>Move 3:</label>
+                <select class="searchable" id="Move3"></select><br/><br/>
+                <label>Move 4:</label>
+                <select class="searchable" id="Move4"></select><br/><br/>
+                <button class="btn btn-primary" type="submit"  style="margin-left: 5px; margin-right: 15px" id="cancelButton">Cancel</button>
+                <button class="btn btn-primary" type="submit" id="addButton">Add</button>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="Add_Pokemon.js"></script>
+    </body>
+</html>

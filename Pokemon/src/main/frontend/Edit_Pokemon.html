@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit a Pokemon</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2>Edit a Pokemon</h2>
+        <div class="pokemon_form">
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" id="name" value="" readonly="true"/><br/><br/>
+                <label for="Type">Type:</label>
+                <input type="text" name="Type"id="Type" value="" readonly="true"/><br/><br/>
+                <label>Ability:</label>
+                <select class="searchable" id="Ability"></select><br/><br/>
+                <label>Level:</label>
+                <input type="number" id="Level" value=""><br/><br/>
+                <label>HP:</label>
+                <input type="number" id="HP" value=""><br/><br/>
+                <label>Attack:</label>
+                <input type="number" id="Attack" value=""><br/><br/>
+                <label>Defense:</label>
+                <input type="number" id="Defense" value=""><br/><br/>
+                <label>Special Attack:</label>
+                <input type="number" id="Special_Attack" value=""><br/><br/>
+                <label>Special Defense:</label>
+                <input type="number" id="Special_Defense" value=""><br/><br/>
+                <label>Speed:</label>
+                <input type="number" id="Speed" value=""><br/><br/>
+                <label>Move 1:</label>
+                <select class="searchable" id="Move1"></select><br/><br/>
+                <label>Move 2:</label>
+                <select class="searchable" id="Move2"></select><br/><br/>
+                <label>Move 3:</label>
+                <select class="searchable" id="Move3"></select><br/><br/>
+                <label>Move 4:</label>
+                <select class="searchable" id="Move4"></select><br/><br/>
+                <input type="submit" id="Leave" class="btn btn-primary" style="margin-left: 5px; margin-right: 15px" value="Cancel">
+                <input type="submit" id="SaveChanges" class="btn btn-primary" value="Save Changes">
+        </div>
+    </body>
+    <script src="Edit_Pokemon.js"></script>
+</html>
